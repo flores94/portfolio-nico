@@ -245,18 +245,6 @@ document.querySelectorAll('.works-marquee__item').forEach(item => {
     return !!group.closest('.works-marquee--reverse');
   }
 
-  // Convert a pixel drag delta to an animation time delta for a specific group.
-  // Dragging LEFT (negative px) should visually scroll items LEFT regardless of row direction.
-  function pxToTimeDelta(group, px) {
-    const anim = getAnim(group);
-    if (!anim) return 0;
-    const duration  = anim.effect.getTiming().duration;
-    const totalPx   = group.offsetWidth; // one full scroll cycle = group width
-    // For a reverse row, flip the sign so both rows move visually in sync
-    const dir = isReverse(group) ? -1 : 1;
-    return (-px / totalPx) * duration * dir;
-  }
-
   // ---- Arrow hold-to-scroll ----
   let arrowRaf      = null;
   let arrowScrolling = false;
@@ -310,57 +298,6 @@ document.querySelectorAll('.works-marquee__item').forEach(item => {
   document.addEventListener('mouseup',     stopArrowScroll);
   document.addEventListener('touchend',    stopArrowScroll);
   document.addEventListener('touchcancel', stopArrowScroll);
-
-  // ---- Drag state ----
-  let dragging     = false;
-  let startX       = 0;
-  let startTimes   = [];
-
-  function onDragStart(clientX) {
-    dragging   = true;
-    startX     = clientX;
-    startTimes = allGroups.map(g => getAnim(g)?.currentTime ?? 0);
-    allGroups.forEach(g => { const a = getAnim(g); if (a) a.pause(); });
-    wrapper.classList.add('is-dragging');
-  }
-
-  function onDragMove(clientX) {
-    if (!dragging) return;
-    const px = clientX - startX;
-    allGroups.forEach((group, i) => {
-      const anim = getAnim(group);
-      if (!anim) return;
-      const duration = anim.effect.getTiming().duration;
-      let t = (startTimes[i] + pxToTimeDelta(group, px) + duration * 2) % duration;
-      anim.currentTime = t;
-    });
-  }
-
-  function onDragEnd() {
-    if (!dragging) return;
-    dragging = false;
-    allGroups.forEach(g => { const a = getAnim(g); if (a) a.play(); });
-    wrapper.classList.remove('is-dragging');
-  }
-
-  // Mouse
-  wrapper.addEventListener('mousedown', e => {
-    if (e.target.closest('.mq-arrow')) return;
-    onDragStart(e.clientX);
-    e.preventDefault();
-  });
-  document.addEventListener('mousemove', e => onDragMove(e.clientX));
-  document.addEventListener('mouseup',   onDragEnd);
-
-  // Touch
-  wrapper.addEventListener('touchstart', e => {
-    if (e.target.closest('.mq-arrow')) return;
-    onDragStart(e.touches[0].clientX);
-  }, { passive: true });
-  document.addEventListener('touchmove', e => {
-    if (dragging) onDragMove(e.touches[0].clientX);
-  }, { passive: true });
-  document.addEventListener('touchend', onDragEnd);
 })();
 
 // ===== SERVICES CARDS — staggered reveal =====
