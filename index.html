@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolás Flores — Diseñador Estratégico</title>
+  <meta name="description" content="Portfolio de Nicolás Flores — Diseñador estratégico especializado en branding, UX/UI y automatización con IA. Yerba Buena, Tucumán.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="#hero"><img src="assets/nico-flores-logo.png" alt="Nico Flores" class="navbar__logo-img"></a>
+      <span class="navbar__greeting">👋 hola, soy Nicolás Flores</span>
+      <div class="navbar__right">
+        <ul class="navbar__links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+        </ul>
+        <a class="navbar__cta" href="#contacto">Contacto</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+    <button class="nav-overlay__close" id="nav-close" aria-label="Cerrar menú">✕</button>
+    <ul>
+      <li><a href="#sobre-mi" class="nav-overlay-link">Sobre mí</a></li>
+      <li><a href="#proyectos" class="nav-overlay-link">Proyectos</a></li>
+      <li><a href="#trayectoria" class="nav-overlay-link">Trayectoria</a></li>
+      <li><a href="#contacto" class="nav-overlay-link">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__layout">
+      <p class="hero__greeting" id="hero-greeting">👋 hola, soy Nicolás Flores</p>
+      <div class="hero__left">
+        <a href="#proyectos" class="hero__word" id="hero-word-left">BRANDING</a>
+        <p class="hero__sub" id="hero-sub-left"><em>estratégico</em></p>
+      </div>
+      <div class="hero__photo-wrap" id="hero-photo">
+        <img src="assets/iamgen-nico-web.png" alt="Nicolás Flores — Diseñador Estratégico" class="hero__photo">
+        <p class="hero__location" id="hero-location">📍 based in Yerba Buena, Tucumán</p>
+      </div>
+      <div class="hero__right">
+        <a href="#trabajos" class="hero__word" id="hero-word-right">WEB-UX/UI</a>
+        <p class="hero__sub" id="hero-sub-right"><em>automatizaciones IA</em></p>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator" id="scroll-indicator">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== CLIENTES ===== -->
+  <section class="clients">
+    <div class="clients__track-wrap">
+      <div class="clients__track">
+        <img src="assets/clientes/logos-clientes-0.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-1.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-2.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-3.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-4.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-5.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-6.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-7.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-8.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-9.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-10.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-11.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-12.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-13.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-14.png" alt="Cliente">
+        <img src="assets/clientes/logos-clientes-15.png" alt="Cliente">
+        <!-- duplicado para loop infinito -->
+        <img src="assets/clientes/logos-clientes-0.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-1.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-2.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-3.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-4.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-5.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-6.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-7.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-8.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-9.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-10.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-11.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-12.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-13.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-14.png" alt="" aria-hidden="true">
+        <img src="assets/clientes/logos-clientes-15.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ + SERVICIOS ===== -->
+  <section class="about" id="sobre-mi">
+    <div class="about__grid">
+      <div class="about__photo-col reveal">
+        <img src="assets/imagen%20sobre%20mi%20desktop.png" alt="Nicolás Flores" class="about__photo">
+      </div>
+      <div class="about__content-col">
+        <span class="section-label reveal">01 — SOBRE MÍ</span>
+        <h2 class="reveal">Diseño que conecta personas y negocios.</h2>
+        <p class="about__bio reveal">
+          Diseñador estratégico con más de 8 años de experiencia en branding y UX/UI. Combino la psicología del consumidor y el análisis competitivo para crear identidades de marca que conectan con las personas. Integro automatizaciones con IA (n8n) y Prompt Engineering para optimizar procesos creativos y mejorar la eficiencia del equipo.
+        </p>
+        <img src="assets/imagen-sobre-mi-mobile.png" alt="Nicolás Flores" class="about__photo--mobile reveal">
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <span class="service-card__num">01</span>
+            <h3 class="service-card__title">Pensamiento estratégico orientado a negocio</h3>
+            <p class="service-card__desc">Soluciones de diseño conectadas con los objetivos reales del negocio.</p>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-card__num">02</span>
+            <h3 class="service-card__title">Diseño basado en análisis y datos</h3>
+            <p class="service-card__desc">Decisiones creativas fundamentadas en research y métricas.</p>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-card__num">03</span>
+            <h3 class="service-card__title">Optimización de procesos con automatización</h3>
+            <p class="service-card__desc">Workflows con n8n e IA para hacer más con menos tiempo.</p>
+          </div>
+          <div class="service-card reveal">
+            <span class="service-card__num">04</span>
+            <h3 class="service-card__title">Construcción de sistemas visuales escalables</h3>
+            <p class="service-card__desc">Design systems robustos que crecen con la marca.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS STACK ===== -->
+  <section class="projects" id="proyectos">
+    <div class="projects__intro reveal">
+      <span class="section-label">02 — PROYECTOS</span>
+      <h2>Selección de trabajos.</h2>
+    </div>
+    <div class="projects__stack">
+      <a class="project-card"
+         data-index="0"
+         style="top: 270px; z-index: 1;"
+         href="https://www.behance.net/gallery/242633727/EMI-50-Aniversario-Identidad-Visual-Campana"
+         target="_blank" rel="noopener noreferrer">
+        <picture>
+          <source media="(max-width: 639px)" srcset="assets/proyectos/EMI%2050%20MOVIL.png">
+          <img src="assets/proyectos/50%20a%C3%B1os%20emi.png" alt="EMI 50° Aniversario" class="project-card__img">
+        </picture>
+        <div class="project-card__overlay">
+          <div class="project-card__meta">
+            <span class="project-card__year">2024</span>
+            <span class="project-card__tag">Branding</span>
+            <span class="project-card__tag">Campaña</span>
+            <span class="project-card__tag">Motion</span>
+          </div>
+          <h3 class="project-card__title">EMI 50° ANIVERSARIO</h3>
+        </div>
+      </a>
+      <a class="project-card"
+         data-index="1"
+         style="top: 270px; z-index: 2;"
+         href="https://www.behance.net/gallery/172594769/LOGOFOLIO-Vol-01"
+         target="_blank" rel="noopener noreferrer">
+        <picture>
+          <source media="(max-width: 639px)" srcset="assets/proyectos/LOGO%20FOLIO%20MOVIL.png">
+          <img src="assets/proyectos/logo-folio.png" alt="Logofolio Vol. 01" class="project-card__img">
+        </picture>
+        <div class="project-card__overlay">
+          <div class="project-card__meta">
+            <span class="project-card__year">2023</span>
+            <span class="project-card__tag">Branding</span>
+            <span class="project-card__tag">Logo Design</span>
+          </div>
+          <h3 class="project-card__title">LOGOFOLIO VOL. 01</h3>
+        </div>
+      </a>
+      <a class="project-card"
+         data-index="2"
+         style="top: 270px; z-index: 3;"
+         href="https://www.behance.net/gallery/172753543/HOT-SALE-2023-EMI-VIDEOCAMPANA"
+         target="_blank" rel="noopener noreferrer">
+        <picture>
+          <source media="(max-width: 639px)" srcset="assets/proyectos/HOT%20SALE%20MOVIL.png">
+          <img src="assets/proyectos/hot-sale.png" alt="Hot Sale EMI 2023" class="project-card__img">
+        </picture>
+        <div class="project-card__overlay">
+          <div class="project-card__meta">
+            <span class="project-card__year">2023</span>
+            <span class="project-card__tag">Motion</span>
+            <span class="project-card__tag">Campaña</span>
+          </div>
+          <h3 class="project-card__title">HOT SALE EMI 2023</h3>
+        </div>
+      </a>
+      <a class="project-card"
+         data-index="3"
+         style="top: 270px; z-index: 4;"
+         href="https://www.behance.net/gallery/169055099/UXUI-Desing-CIUDADANO-App"
+         target="_blank" rel="noopener noreferrer">
+        <picture>
+          <source media="(max-width: 639px)" srcset="assets/proyectos/CIUDADANO%20MOVIL.png">
+          <img src="assets/proyectos/ciudadano.png" alt="Ciudadano App" class="project-card__img">
+        </picture>
+        <div class="project-card__overlay">
+          <div class="project-card__meta">
+            <span class="project-card__year">2023</span>
+            <span class="project-card__tag">UX/UI</span>
+            <span class="project-card__tag">App Design</span>
+          </div>
+          <h3 class="project-card__title">CIUDADANO APP</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== WORKS MARQUEE ===== -->
+  <section class="works-marquee-section" id="trabajos">
+    <h2 class="works-transition-title">UX/UI <span class="accent">—</span> WEB <span class="accent">—</span> IA</h2>
+    <div class="mq-nav-container">
+      <button class="mq-arrow mq-arrow--prev" aria-label="Anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="mq-arrow mq-arrow--next" aria-label="Siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+    <div class="works-marquee-wrapper">
+
+      <!-- Fila 1: izquierda — imágenes 1 a 10 en orden -->
+      <div class="works-marquee">
+        <div class="works-marquee__group">
+          <a class="works-marquee__item" data-work-id="1" data-label="EMI Ranking" href="https://github.com/flores94/EMIRANKING" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen--1%20emi%20juego.webp" alt="EMI Juego Ranking" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="2" data-label="NutriHaus" href="https://nutrihaustuc.com.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen2%20nutrihause.webp" alt="Nutrihause" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="3" data-label="Automatización Presupuestos" href="#proyectos">
+            <img src="assets/proyectos/proyectos%202/IMAGEN-3%20AUTOMATIZACION%20PRESUPUESTOS.webp" alt="Automatización Presupuestos" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="4" data-label="Contadores Net" href="https://contadoresnet.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen-4-contadores.webp" alt="Contadores Net" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="5" data-label="Club Sportivo" href="https://clubsportivo.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/IAMGEN%205%20WEB%20CLUB%20SOPRTIVO.webp" alt="Club Sportivo" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="6" data-label="Ciudadano App" href="https://www.behance.net/gallery/169055099/UXUI-Desing-CIUDADANO-App" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/IAMGEN%206%20UXUI%20CIUDADANO.webp" alt="UX/UI Ciudadano App" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="7" data-label="Punto Estético" href="https://www.puntoestetico.com.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/IMAGEN%207%20WEB%20PUNTO%20ESTETICO.webp" alt="Punto Estético" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="8" data-label="Smart Bot Finanzas" href="https://cursocoderhouse.my.canva.site/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen8%20%20finanzas%20bot%20automatizacion.webp" alt="Bot Automatización Finanzas" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="9" data-label="Industrias Olivícolas" href="https://www.industriasolivicolas.com.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/iamgen10%20industrias%20olivicolas.webp" alt="Industrias Olivícolas" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="10" data-label="EMI App" href="https://github.com/flores94/EMIRANKING" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen-8-emi.png" alt="EMI App" loading="lazy">
+          </a>
+        </div>
+        <div class="works-marquee__group" aria-hidden="true">
+          <a class="works-marquee__item" data-work-id="1" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen--1%20emi%20juego.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="2" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen2%20nutrihause.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="3" tabindex="-1"><img src="assets/proyectos/proyectos%202/IMAGEN-3%20AUTOMATIZACION%20PRESUPUESTOS.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="4" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen-4-contadores.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="5" tabindex="-1"><img src="assets/proyectos/proyectos%202/IAMGEN%205%20WEB%20CLUB%20SOPRTIVO.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="6" tabindex="-1"><img src="assets/proyectos/proyectos%202/IAMGEN%206%20UXUI%20CIUDADANO.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="7" tabindex="-1"><img src="assets/proyectos/proyectos%202/IMAGEN%207%20WEB%20PUNTO%20ESTETICO.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="8" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen8%20%20finanzas%20bot%20automatizacion.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="9" tabindex="-1"><img src="assets/proyectos/proyectos%202/iamgen10%20industrias%20olivicolas.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="10" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen-8-emi.png" alt="" loading="lazy"></a>
+        </div>
+      </div>
+
+      <!-- Fila 2: derecha — orden invertido 10→1 para nunca coincidir con fila 1 -->
+      <div class="works-marquee works-marquee--reverse">
+        <div class="works-marquee__group">
+          <a class="works-marquee__item" data-work-id="10" data-label="EMI App" href="https://github.com/flores94/EMIRANKING" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen-8-emi.png" alt="EMI App" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="9" data-label="Industrias Olivícolas" href="https://www.industriasolivicolas.com.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/iamgen10%20industrias%20olivicolas.webp" alt="Industrias Olivícolas" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="8" data-label="Smart Bot Finanzas" href="https://cursocoderhouse.my.canva.site/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen8%20%20finanzas%20bot%20automatizacion.webp" alt="Bot Automatización Finanzas" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="7" data-label="Punto Estético" href="https://www.puntoestetico.com.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/IMAGEN%207%20WEB%20PUNTO%20ESTETICO.webp" alt="Punto Estético" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="6" data-label="Ciudadano App" href="https://www.behance.net/gallery/169055099/UXUI-Desing-CIUDADANO-App" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/IAMGEN%206%20UXUI%20CIUDADANO.webp" alt="UX/UI Ciudadano App" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="5" data-label="Club Sportivo" href="https://clubsportivo.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/IAMGEN%205%20WEB%20CLUB%20SOPRTIVO.webp" alt="Club Sportivo" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="4" data-label="Contadores Net" href="https://contadoresnet.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen-4-contadores.webp" alt="Contadores Net" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="3" data-label="Automatización Presupuestos" href="#proyectos">
+            <img src="assets/proyectos/proyectos%202/IMAGEN-3%20AUTOMATIZACION%20PRESUPUESTOS.webp" alt="Automatización Presupuestos" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="2" data-label="NutriHaus" href="https://nutrihaustuc.com.ar/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen2%20nutrihause.webp" alt="Nutrihause" loading="lazy">
+          </a>
+          <a class="works-marquee__item" data-work-id="1" data-label="EMI Ranking" href="https://github.com/flores94/EMIRANKING" target="_blank" rel="noopener noreferrer">
+            <img src="assets/proyectos/proyectos%202/imagen--1%20emi%20juego.webp" alt="EMI Juego Ranking" loading="lazy">
+          </a>
+        </div>
+        <div class="works-marquee__group" aria-hidden="true">
+          <a class="works-marquee__item" data-work-id="10" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen-8-emi.png" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="9" tabindex="-1"><img src="assets/proyectos/proyectos%202/iamgen10%20industrias%20olivicolas.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="8" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen8%20%20finanzas%20bot%20automatizacion.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="7" tabindex="-1"><img src="assets/proyectos/proyectos%202/IMAGEN%207%20WEB%20PUNTO%20ESTETICO.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="6" tabindex="-1"><img src="assets/proyectos/proyectos%202/IAMGEN%206%20UXUI%20CIUDADANO.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="5" tabindex="-1"><img src="assets/proyectos/proyectos%202/IAMGEN%205%20WEB%20CLUB%20SOPRTIVO.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="4" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen-4-contadores.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="3" tabindex="-1"><img src="assets/proyectos/proyectos%202/IMAGEN-3%20AUTOMATIZACION%20PRESUPUESTOS.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="2" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen2%20nutrihause.webp" alt="" loading="lazy"></a>
+          <a class="works-marquee__item" data-work-id="1" tabindex="-1"><img src="assets/proyectos/proyectos%202/imagen--1%20emi%20juego.webp" alt="" loading="lazy"></a>
+        </div>
+      </div>
+
+    </div>
+    </div><!-- /mq-nav-container -->
+  </section>
+
+  <!-- ===== HERRAMIENTAS ===== -->
+  <section class="tools" id="herramientas">
+    <div class="tools__inner">
+      <div class="tools__header reveal">
+        <span class="section-label">03 — HERRAMIENTAS</span>
+        <h2>Con lo que trabajo.</h2>
+      </div>
+      <div class="tools__categories">
+
+        <div class="tools__group reveal">
+          <p class="tools__cat-label">DISEÑO</p>
+          <div class="tools__grid">
+            <div class="tool-item">
+              <img src="assets/tools/icons8-adobe-photoshop-94.png" alt="Photoshop">
+              <span>Photoshop</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-adobe-illustrator-94.png" alt="Illustrator">
+              <span>Illustrator</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-adobe-after-effects-96.png" alt="After Effects">
+              <span>After Effects</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-adobe-indesign-94.png" alt="InDesign">
+              <span>InDesign</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-figma-96.png" alt="Figma">
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools__group reveal">
+          <p class="tools__cat-label">IA</p>
+          <div class="tools__grid">
+            <div class="tool-item">
+              <img src="assets/tools/icons8-chatbot-94.png" alt="n8n">
+              <span>n8n</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-3d-claude-ai-logo-94.png" alt="Claude">
+              <span>Claude</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-ai-94.png" alt="Gemini">
+              <span>Gemini</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-chatgpt-94.png" alt="ChatGPT">
+              <span>ChatGPT</span>
+            </div>
+            <div class="tool-item tool-item--text">
+              <span>Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools__group reveal">
+          <p class="tools__cat-label">WEB</p>
+          <div class="tools__grid">
+            <div class="tool-item">
+              <img src="assets/tools/icons8-visual-studio-code-2019-96.png" alt="VS Code">
+              <span>VS Code</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-html5-96.png" alt="HTML">
+              <span>HTML</span>
+            </div>
+            <div class="tool-item">
+              <img src="assets/tools/icons8-css-96.png" alt="CSS">
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tools__group reveal">
+          <p class="tools__cat-label">UX/UI</p>
+          <div class="tools__grid tools__grid--text">
+            <div class="tool-item tool-item--text"><span>UX Research</span></div>
+            <div class="tool-item tool-item--text"><span>User Flows</span></div>
+            <div class="tool-item tool-item--text"><span>Wireframing</span></div>
+            <div class="tool-item tool-item--text"><span>Atomic Design</span></div>
+            <div class="tool-item tool-item--text"><span>Prototipado</span></div>
+            <div class="tool-item tool-item--text"><span>Usability Testing</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TRAYECTORIA ===== -->
+  <section class="timeline" id="trayectoria">
+    <div class="timeline__header reveal">
+      <span class="section-label">04 — TRAYECTORIA</span>
+      <h2>Recorrido profesional.</h2>
+    </div>
+    <div class="timeline__body">
+      <div class="timeline__line" aria-hidden="true"></div>
+
+      <!-- EDUCACIÓN -->
+      <div class="timeline__col timeline__col--left">
+        <p class="timeline__col-label">EDUCACIÓN</p>
+
+        <div class="timeline__card reveal-left">
+          <span class="timeline__date">2025</span>
+          <h3 class="timeline__role">Automatizaciones con IA</h3>
+          <p class="timeline__company">Coder House — Finalizado</p>
+        </div>
+
+        <div class="timeline__card reveal-left">
+          <span class="timeline__date">2021 — 2023</span>
+          <h3 class="timeline__role">Carrera Desarrollo UX/UI</h3>
+          <p class="timeline__company">Coder House — Finalizado</p>
+        </div>
+
+        <div class="timeline__card reveal-left">
+          <span class="timeline__date">2012 — 2015</span>
+          <h3 class="timeline__role">Tecnicatura Diseño Gráfico</h3>
+          <p class="timeline__company">Instituto JIM — Finalizado</p>
+        </div>
+
+        <div class="timeline__card reveal-left">
+          <span class="timeline__date">2013 — 2014</span>
+          <h3 class="timeline__role">Tecnicatura Fotografía</h3>
+          <p class="timeline__company">UNT Bellas Artes — 2° año</p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCIA -->
+      <div class="timeline__col timeline__col--right">
+        <p class="timeline__col-label">EXPERIENCIA</p>
+
+        <div class="timeline__card reveal-right">
+          <span class="timeline__date">2019 — Actualidad</span>
+          <h3 class="timeline__role">EMI SRL</h3>
+          <p class="timeline__company">Lead Designer</p>
+          <ul class="timeline__bullets">
+            <li>Liderazgo de equipo de 4 diseñadores</li>
+            <li>Dirección creativa de branding corporativo, web y editorial</li>
+            <li>Desarrollo de identidad visual para campaña 50° aniversario</li>
+            <li>Diseño de juego interactivo para Expo NOA Construye</li>
+            <li>Implementación de automatizaciones con n8n para e-commerce</li>
+            <li>Gestión de proyectos creativos con metodologías Agile</li>
+          </ul>
+        </div>
+
+        <div class="timeline__card reveal-right">
+          <span class="timeline__date">2017 — Actualidad</span>
+          <h3 class="timeline__role">Trabajos Freelance</h3>
+          <p class="timeline__company">Branding · UX/UI · Estratégico</p>
+          <ul class="timeline__bullets">
+            <li>Soporte de branding para Insiders</li>
+            <li>Diseño completo App Ciudadano (UX Research, wireframing, atomic design, prototipado)</li>
+          </ul>
+        </div>
+
+        <div class="timeline__card reveal-right">
+          <span class="timeline__date">2015 — 2019</span>
+          <h3 class="timeline__role">Gráfica del Arte</h3>
+          <p class="timeline__company">Coordinador de Diseño</p>
+          <ul class="timeline__bullets">
+            <li>Liderazgo de equipo de 3 diseñadores</li>
+            <li>Implementación de metodologías Agile</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES BLANDAS ===== -->
+  <section class="soft-skills-section">
+    <div class="soft-skills-section__inner reveal">
+      <p class="tools__cat-label">HABILIDADES BLANDAS</p>
+      <div class="soft-skills__tags">
+        <span class="tag">Pensamiento estratégico</span>
+        <span class="tag">Gestión de proyectos creativos</span>
+        <span class="tag">Inglés intermedio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO + FOOTER ===== -->
+  <section class="contact" id="contacto">
+    <div class="contact__inner">
+      <h2 class="contact__headline reveal"><span class="accent">¿</span>Trabajamos juntos<span class="accent">?</span></h2>
+      <p class="contact__sub reveal">Disponible para proyectos freelance y oportunidades full-time.</p>
+      <a href="mailto:fndisenio@gmail.com" class="contact__cta reveal">fndisenio@gmail.com →</a>
+
+      <div class="contact__grid reveal">
+        <div class="contact__item">
+          <p class="contact__item-label">Ubicación</p>
+          <span>Yerba Buena, Tucumán, Argentina</span>
+        </div>
+      </div>
+
+      <div class="contact__social reveal">
+        <a href="https://linkedin.com/in/nicol%C3%A1s-flores-bas" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://behance.net/nicolasflores" target="_blank" rel="noopener noreferrer" class="social-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.7.756-.65.16-1.33.232-2.04.232H0V4.51l6.938-.007zm-.32 5.58c.602 0 1.09-.145 1.46-.437.37-.29.55-.75.55-1.36 0-.34-.06-.625-.18-.855-.12-.23-.29-.415-.5-.55-.21-.13-.45-.22-.72-.267-.27-.05-.555-.072-.855-.072H3.5v3.54h3.12zm.16 5.836c.336 0 .65-.03.94-.09s.548-.165.764-.315c.216-.15.39-.354.514-.604.124-.25.19-.57.19-.96 0-.76-.22-1.31-.66-1.65-.44-.34-1.02-.51-1.74-.51H3.5v4.13h3.28zm9.627.378c.4.39.98.58 1.73.58.538 0 1.002-.135 1.39-.405.387-.27.624-.555.71-.855h2.46c-.395 1.23-1 2.11-1.82 2.64-.82.53-1.81.8-2.97.8-.806 0-1.533-.13-2.18-.39-.647-.26-1.194-.625-1.64-1.095-.45-.47-.793-1.03-1.03-1.68-.236-.65-.354-1.36-.354-2.13 0-.74.12-1.43.363-2.07.244-.64.586-1.2 1.03-1.667.44-.467.97-.834 1.587-1.1.62-.265 1.31-.4 2.07-.4.847 0 1.593.163 2.24.49.646.325 1.177.768 1.59 1.33.41.56.703 1.2.878 1.92.176.72.24 1.48.19 2.28h-7.32c0 .76.258 1.5.658 1.89zm3.01-5.07c-.32-.353-.826-.53-1.52-.53-.448 0-.82.074-1.112.224-.29.15-.522.33-.696.547-.176.215-.3.44-.37.67-.07.23-.11.444-.12.634h4.39c-.1-.714-.37-1.19-.69-1.543h.118zm-5.77-6.4h5.49v1.35h-5.49V4.83z"/>
+          </svg>
+          Behance
+        </a>
+      </div>
+
+      <hr class="contact__divider">
+      <p class="contact__copy">© 2026 Nicolás Flores · Diseñado y construido en Tucumán</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
