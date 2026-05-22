@@ -1416,14 +1416,14 @@ button { cursor: pointer; border: none; background: none; }
     padding-right: 0;
   }
 
-  /* Foto: reducida 15% (55vw→47vw), bajada levemente */
+  /* Foto: top + height suman 100vh para tocar exactamente el borde inferior */
   .hero__photo-wrap {
     position: absolute;
-    top: 10vh;
+    top: 16vh;
     left: 50%;
     transform: translateX(-50%);
     width: 45.6vw;
-    height: 100%;
+    height: 84vh;
     flex: none;
     z-index: 1;
   }
@@ -1442,11 +1442,12 @@ button { cursor: pointer; border: none; background: none; }
 
   /* Ubicación: zona inferior izquierda de la foto */
   .hero__location {
-    bottom: 160px;
+    bottom: 12%;
     left: calc(-22.5vw);
     transform: none;
     white-space: nowrap;
     font-size: 1.14rem;
+    opacity: 1;
   }
 
   /* Logos duplicados en desktop */
