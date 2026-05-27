@@ -205,6 +205,25 @@ button { cursor: pointer; border: none; background: none; }
   box-shadow: 0 4px 16px rgba(172, 234, 27, 0.4);
 }
 
+.navbar__cv-btn {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-sm);
+  border: 1.5px solid rgba(0,0,0,0.18);
+  background: transparent;
+  color: rgba(0,0,0,0.45);
+  padding: 0.35rem 1.2rem;
+  border-radius: 8px;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+
+.navbar__cv-btn:hover {
+  background: rgba(0,0,0,0.06);
+  color: rgba(0,0,0,0.7);
+  border-color: rgba(0,0,0,0.3);
+}
+
 .navbar__hamburger {
   display: none;
   flex-direction: column;
@@ -285,6 +304,26 @@ button { cursor: pointer; border: none; background: none; }
 
 .nav-overlay a[href="#contacto"] {
   color: var(--color-accent);
+}
+
+.nav-overlay__cv-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent);
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: background var(--transition), color var(--transition);
+}
+
+.nav-overlay__cv-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-dark);
 }
 
 /* ===== HERO ===== */
@@ -1441,9 +1480,10 @@ button { cursor: pointer; border: none; background: none; }
   }
 
   /* Ubicación: zona inferior izquierda de la foto */
+  /* left aligns with BRANDING's left edge: photo-wrap starts at 27.2vw, so offset = BRANDING_pos - 27.2vw */
   .hero__location {
-    bottom: 12%;
-    left: calc(-22.5vw);
+    bottom: 20%;
+    left: max(calc(-23vw + 30px), calc(0.8vw - 350px));
     transform: none;
     white-space: nowrap;
     font-size: 1.14rem;
@@ -1723,6 +1763,24 @@ button { cursor: pointer; border: none; background: none; }
 @media (min-width: 769px) and (max-width: 1023px) {
   .navbar__hamburger { display: flex; }
   .navbar__right { display: none; }
+}
+
+/* Project cards — smaller on laptop screens to avoid overflow */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .project-card {
+    width: 72vw;
+    max-width: 920px;
+  }
+}
+
+/* Desktop navbar: full-width, padding matches BRANDING left edge exactly
+   Formula: 4.25vw+30px for 1024–1600px, 28vw-350px for >1600px */
+@media (min-width: 1024px) {
+  .navbar__inner {
+    max-width: none;
+    padding-left: max(calc(4.25vw + 30px), calc(28vw - 350px));
+    padding-right: max(calc(4.25vw + 30px), calc(28vw - 350px));
+  }
 }
 
 /* ===== PANTALLAS CUADRADAS (ej. 1024×768) — foto alta anclada al fondo ===== */
